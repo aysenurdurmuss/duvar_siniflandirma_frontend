@@ -1,0 +1,118 @@
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 32px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-align: center;
+}
+
+.container img {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 14px;
+}
+
+h1 {
+  color: #263445;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+input[type="file"] {
+  font-size: 13px;
+}
+
+button {
+  background-color: #4a90d9;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #3a7bc8;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.sonuc-etiketi {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+.sonuc-saglam {
+  color: #2e7d32;
+}
+
+.sonuc-catlak {
+  color: #e67e22;
+}
+
+.sonuc-kirik {
+  color: #c0392b;
+}
+
+.sonuc-belirsiz, .sonuc-duvar-degil {
+  color: #757575;
+}
+
+.olasilik-satiri {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  text-align: left;
+}
+
+.olasilik-etiket {
+  width: 70px;
+  font-size: 13px;
+  color: #555;
+  text-align: right;
+}
+
+.olasilik-cubuk-arkaplan {
+  flex: 1;
+  background-color: #edf1f5;
+  border-radius: 8px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.olasilik-cubuk-dolu {
+  background: linear-gradient(90deg, #4a90d9, #6fb1e8);
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.4s ease;
+}
+
+.olasilik-yuzde {
+  width: 42px;
+  font-size: 13px;
+  color: #555;
+}
+
+.hata-kutusu {
+  border: 1px solid #e74c3c;
+  background-color: #fdecea;
+  color: #c0392b;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 14px;
+  font-size: 14px;
+}

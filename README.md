@@ -1,59 +1,33 @@
-# DuvarFrontend
+# Duvar Hasarı Sınıflandırma - Arayüz (Frontend)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+Duvar yüzeylerine ait bir görsel yükleyip, görüntü işleme modelinin bu görseli "sağlam", "çatlak" veya "kırık" olarak nasıl sınıflandırdığını gösteren Angular tabanlı web arayüzü. Bir staj projesi kapsamında geliştirilmiştir.
 
-## Development server
+Bu arayüz, tahmin işlemini şu backend servisine istek atarak yapar: [duvar_siniflandirma (FastAPI backend)](https://github.com/aysenurdurmuss/duvar_siniflandirma)
 
-To start a local development server, run:
+## Özellikler
 
-```bash
-ng serve
-```
+- Bilgisayardan görsel seçip önizleme
+- Seçilen görseli backend'e gönderip tahmin sonucu alma
+- Tahmin edilen sınıfı ve her sınıf için olasılık yüzdelerini görselleştirme
+- Backend'den gelen hata mesajlarının kullanıcıya gösterilmesi (örn. desteklenmeyen dosya, sunucuya ulaşılamaması)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Kullanılan Teknolojiler
 
-## Code scaffolding
+- Angular
+- TypeScript
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Kurulum
 
 ```bash
-ng generate --help
+npm install
 ```
 
-## Building
+## Çalıştırma
 
-To build the project run:
+Bu arayüz, tahmin isteklerini `http://127.0.0.1:8000` adresinde çalışan backend servisine gönderir. Bu yüzden önce [backend servisinin](https://github.com/aysenurdurmuss/duvar_siniflandirma) çalışır durumda olması gerekir.
 
 ```bash
-ng build
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Uygulama ayağa kalktıktan sonra `http://localhost:4200` adresinden erişilebilir.
